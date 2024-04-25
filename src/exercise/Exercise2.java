@@ -11,8 +11,6 @@ public class Exercise2 {
         char[] arr2 = str1.toCharArray();
         sorted(arr1);
         sorted(arr2);
-        System.out.println(arr1);
-        System.out.println(arr2);
         return Arrays.equals(arr1, arr2);
     }
     public static char[] sorted(char[] array){
