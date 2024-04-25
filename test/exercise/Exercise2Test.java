@@ -9,9 +9,7 @@ public class Exercise2Test {
     public void testThaTwoStringsAreAnagram() {
         String arr = "CAT";
         String arr1 = "act";
-        boolean expected = true;
-        boolean result = Exercise2.isAnagram(arr, arr1);
-        assertEquals(expected, result);
+        assertTrue(Exercise2.isAnagram(arr, arr1));
 
 
     }
@@ -19,17 +17,13 @@ public class Exercise2Test {
     public void testForTwoStrings_NotAnagram() {
         String arr = "food";
         String arr1 = "offd";
-        boolean expected = false;
-        boolean result = Exercise2.isAnagram(arr, arr1);
-        assertEquals(expected, result);
+        assertFalse(Exercise2.isAnagram(arr, arr1));
 
     }
     @Test
     public void testTwoStringsWithDifferentLength_NotAnagram() {
         String arr = "catt";
         String arr1 = "act";
-        boolean expected = false;
-        boolean result = Exercise2.isAnagram(arr, arr1);
-        assertEquals(expected, result);
+        assertFalse(Exercise2.isAnagram(arr, arr1));
     }
 }
