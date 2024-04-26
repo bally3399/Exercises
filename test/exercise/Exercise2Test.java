@@ -10,8 +10,6 @@ public class Exercise2Test {
         String arr = "CAT";
         String arr1 = "act";
         assertTrue(Exercise2.isAnagram(arr, arr1));
-
-
     }
     @Test
     public void testForTwoStrings_NotAnagram() {
